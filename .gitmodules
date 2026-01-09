@@ -4,6 +4,9 @@
 [submodule "docs"]
 	path = docs
 	url = https://github.com/soapmactavish23/algashop-docs
+[submodule "microservices/billing"]
+	path = microservices/billing
+	url = https://github.com/soapmactavish23/billing
 [submodule "microservices/product-catalog"]
 	path = microservices/product-catalog
 	url = git@https://github.com/soapmactavish23/product-catalog.git
