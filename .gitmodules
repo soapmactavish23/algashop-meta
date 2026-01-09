@@ -1,3 +1,9 @@
+[submodule "microservices/ordering"]
+	path = microservices/ordering
+	url = https://github.com/soapmactavish23/algashop-ordering
+[submodule "docs"]
+	path = docs
+	url = https://github.com/soapmactavish23/algashop-docs
 [submodule "microservices/product-catalog"]
 	path = microservices/product-catalog
 	url = git@https://github.com/soapmactavish23/product-catalog.git
