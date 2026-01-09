@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - InvoiceManagementApplicationServiceIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>InvoiceManagementApplicationServiceIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.algaworks.algashop.billing.application.invoice.management.html">com.algaworks.algashop.billing.application.invoice.management</a> &gt; InvoiceManagementApplicationServiceIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.447s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldProcessInvoicePaymentAndCancelInvoice()</td>
+<td class="success">0.447s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+21:39:54.335 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.algaworks.algashop.billing.application.invoice.management.InvoiceManagementApplicationServiceIT]: InvoiceManagementApplicationServiceIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:39:54.507 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.algaworks.algashop.billing.BillingApplication for test class com.algaworks.algashop.billing.application.invoice.management.InvoiceManagementApplicationServiceIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-12-20T21:39:55.008-03:00  INFO 33540 --- [billing] [    Test worker] .m.InvoiceManagementApplicationServiceIT : Starting InvoiceManagementApplicationServiceIT using Java 17.0.12 with PID 33540 (started by Usuario in D:\workspace\algashop-meta\microservices\billing)
+2025-12-20T21:39:55.010-03:00  INFO 33540 --- [billing] [    Test worker] .m.InvoiceManagementApplicationServiceIT : The following 1 profile is active: &quot;test&quot;
+2025-12-20T21:39:55.853-03:00  INFO 33540 --- [billing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-20T21:39:55.938-03:00  INFO 33540 --- [billing] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2025-12-20T21:39:57.134-03:00  INFO 33540 --- [billing] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-20T21:39:57.224-03:00  INFO 33540 --- [billing] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-12-20T21:39:57.281-03:00  INFO 33540 --- [billing] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-20T21:39:57.450-03:00  INFO 33540 --- [billing] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-20T21:39:57.485-03:00  INFO 33540 --- [billing] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-20T21:39:57.689-03:00  INFO 33540 --- [billing] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:~/billing-test user=SA
+2025-12-20T21:39:57.692-03:00  INFO 33540 --- [billing] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-20T21:39:57.725-03:00  WARN 33540 --- [billing] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-20T21:39:57.752-03:00  INFO 33540 --- [billing] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-20T21:39:58.709-03:00  INFO 33540 --- [billing] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists credit_card cascade 
+Hibernate: drop table if exists invoice cascade 
+Hibernate: drop table if exists invoice_line_item cascade 
+Hibernate: drop table if exists payment_settings cascade 
+Hibernate: create table credit_card (exp_month integer, exp_year integer, created_at timestamp(6) with time zone, customer_id uuid, id uuid not null, brand varchar(255), gateway_code varchar(255), last_numbers varchar(255), primary key (id))
+Hibernate: create table invoice (total_amount numeric(38,2), canceled_at timestamp(6) with time zone, created_at timestamp(6) with time zone, expires_at timestamp(6) with time zone, issued_at timestamp(6) with time zone, last_modified_date timestamp(6) with time zone, paid_at timestamp(6) with time zone, version bigint not null, created_by_user_id uuid, customer_id uuid, id uuid not null, last_modified_by_user_id uuid, payment_settings_id uuid unique, cancel_reason varchar(255), order_id varchar(255), payer_address_city varchar(255), payer_address_complement varchar(255), payer_address_neighborhood varchar(255), payer_address_number varchar(255), payer_address_state varchar(255), payer_address_street varchar(255), payer_address_zip_code varchar(255), payer_document varchar(255), payer_email varchar(255), payer_full_name varchar(255), payer_phone varchar(255), status enum ('CANCELED','PAID','UNPAID'), primary key (id))
+Hibernate: create table invoice_line_item (&quot;items_amount&quot; numeric(38,2), &quot;items_number&quot; integer, invoice_id uuid not null, &quot;items_name&quot; varchar(255))
+Hibernate: create table payment_settings (credit_card_id uuid, id uuid not null, gateway_code varchar(255), method enum ('CREDIT_CARD','GATEWAY_BALANCE'), primary key (id))
+Hibernate: alter table if exists invoice add constraint FKc3y0lyg3tb97vai59q7ogi6f0 foreign key (payment_settings_id) references payment_settings
+Hibernate: alter table if exists invoice_line_item add constraint FK4560gqjs1jn62cp4govj4akb3 foreign key (invoice_id) references invoice
+2025-12-20T21:39:58.764-03:00  INFO 33540 --- [billing] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-20T21:39:59.519-03:00  WARN 33540 --- [billing] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-20T21:39:59.948-03:00  INFO 33540 --- [billing] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:~/billing-test'
+2025-12-20T21:40:00.057-03:00  INFO 33540 --- [billing] [    Test worker] .m.InvoiceManagementApplicationServiceIT : Started InvoiceManagementApplicationServiceIT in 5.393 seconds (process running for 6.953)
+Hibernate: select i1_0.id,i1_0.cancel_reason,i1_0.canceled_at,i1_0.created_at,i1_0.created_by_user_id,i1_0.customer_id,i1_0.expires_at,i1_0.issued_at,i1_0.last_modified_by_user_id,i1_0.last_modified_date,i1_0.order_id,i1_0.paid_at,i1_0.payer_address_city,i1_0.payer_address_complement,i1_0.payer_address_neighborhood,i1_0.payer_address_number,i1_0.payer_address_state,i1_0.payer_address_street,i1_0.payer_address_zip_code,i1_0.payer_document,i1_0.payer_email,i1_0.payer_full_name,i1_0.payer_phone,ps1_0.id,ps1_0.credit_card_id,ps1_0.gateway_code,ps1_0.method,i1_0.status,i1_0.total_amount,i1_0.version from invoice i1_0 left join payment_settings ps1_0 on ps1_0.id=i1_0.payment_settings_id where i1_0.id=?
+Hibernate: select ps1_0.id,ps1_0.credit_card_id,ps1_0.gateway_code,i1_0.id,i1_0.cancel_reason,i1_0.canceled_at,i1_0.created_at,i1_0.created_by_user_id,i1_0.customer_id,i1_0.expires_at,i1_0.issued_at,i1_0.last_modified_by_user_id,i1_0.last_modified_date,i1_0.order_id,i1_0.paid_at,i1_0.payer_address_city,i1_0.payer_address_complement,i1_0.payer_address_neighborhood,i1_0.payer_address_number,i1_0.payer_address_state,i1_0.payer_address_street,i1_0.payer_address_zip_code,i1_0.payer_document,i1_0.payer_email,i1_0.payer_full_name,i1_0.payer_phone,i1_0.status,i1_0.total_amount,i1_0.version,ps1_0.method from payment_settings ps1_0 left join invoice i1_0 on ps1_0.id=i1_0.payment_settings_id where ps1_0.id=?
+Hibernate: insert into payment_settings (credit_card_id,gateway_code,method,id) values (?,?,?,?)
+Hibernate: insert into invoice (cancel_reason,canceled_at,created_at,created_by_user_id,customer_id,expires_at,issued_at,last_modified_by_user_id,last_modified_date,order_id,paid_at,payer_address_city,payer_address_complement,payer_address_neighborhood,payer_address_number,payer_address_state,payer_address_street,payer_address_zip_code,payer_document,payer_email,payer_full_name,payer_phone,payment_settings_id,status,total_amount,version,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+Hibernate: insert into invoice_line_item (invoice_id,&quot;items_amount&quot;,&quot;items_name&quot;,&quot;items_number&quot;) values (?,?,?,?)
+Hibernate: update payment_settings set credit_card_id=?,gateway_code=?,method=? where id=?
+Hibernate: update invoice set cancel_reason=?,canceled_at=?,created_at=?,created_by_user_id=?,customer_id=?,expires_at=?,issued_at=?,last_modified_by_user_id=?,last_modified_date=?,order_id=?,paid_at=?,payer_address_city=?,payer_address_complement=?,payer_address_neighborhood=?,payer_address_number=?,payer_address_state=?,payer_address_street=?,payer_address_zip_code=?,payer_document=?,payer_email=?,payer_full_name=?,payer_phone=?,payment_settings_id=?,status=?,total_amount=?,version=? where id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at 20 de dez. de 2025 21:40:00</p>
+</div>
+</div>
+</body>
+</html>
