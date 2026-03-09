@@ -1,12 +1,20 @@
 [submodule "microservices/ordering"]
 	path = microservices/ordering
 	url = https://github.com/soapmactavish23/algashop-ordering
+	branch = main
 [submodule "docs"]
 	path = docs
 	url = https://github.com/soapmactavish23/algashop-docs
+	branch = main
 [submodule "microservices/product-catalog"]
 	path = microservices/product-catalog
 	url = git@https://github.com/soapmactavish23/product-catalog.git
+	branch = main
 [submodule "microservices/billing"]
 	path = microservices/billing
 	url = git@github.com:soapmactavish23/billing.git
+	branch = main
+[submodule "template"]
+	path = template
+	url = https://github.com/soapmactavish23/ems-algashop-template.git
+	branch = main
