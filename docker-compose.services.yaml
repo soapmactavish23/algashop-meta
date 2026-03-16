@@ -1,5 +1,5 @@
 include:
-  - docker-compose.tools.yaml
+  - docker-compose.tools.yml
 services:
   algashop-ordering:
     image: algashop/ordering:dev
