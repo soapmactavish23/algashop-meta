@@ -10,14 +10,10 @@ export const options = {
       vus: 1,
       duration: "5s",
     },
-    buy_now_load_test: {
-      executor: "constant-arrival-rate",
-      rate: 60,
-      timeUnit: "1s",
-      duration: "1m",
-      startTime: "5s",
-      maxVUs: 200,
-      preAllocatedVUs: 50,
+    buy_now_volume_test: {
+      executor: "constant-vus",
+      vus: 50,
+      duration: "5s",
     },
   },
   thresholds: {
@@ -72,6 +68,7 @@ export default function () {
     customerId: "6e148bd5-47f6-4022-b9da-07cfaa294f7a",
     quantity: 2,
   };
+
   const json = JSON.stringify(payload);
   let res = http.post(url, json, params);
   check(res, { "status is 201": (res) => res.status === 201 });
