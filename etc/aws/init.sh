@@ -11,11 +11,11 @@ PRIVATE_KEY_B64=$(base64 -w 0 /tmp/algashop-private-key.pem)
 
 PRIVATE_KEY_ID=$(openssl rand -hex 16)
 
-printf '{"privateKeyId":"%s","privateKey":"%s"}' \
+printf '{"privateKeyId":"%s","privateKey":"%s"}' 
   "$PRIVATE_KEY_ID" "$PRIVATE_KEY_B64" > /tmp/secret.json
 
-awslocal secretsmanager create-secret \
-  --name /config/algashop/authorization-server/rsa-key \
+awslocal secretsmanager create-secret 
+  --name /config/algashop/authorization-server/rsa-key 
   --secret-string file:///tmp/secret.json
 
 awslocal configure set cli_follow_urlparam false
@@ -64,7 +64,7 @@ BUCKET=algashop-product-image
     [ -z "$key" ] && continue                    # pula linha em branco
     case "$key" in \#*) continue ;; esac         # pula comentário
     ct=${ct%$'\r'}                               # remove \r se salvo no Windows
-    awslocal s3api put-object \
+    awslocal s3api put-object 
       --bucket "$BUCKET" --key "$key" --content-type "$ct" --body "/etc/images/$key"
   done
 } < /etc/aws/s3.csv
