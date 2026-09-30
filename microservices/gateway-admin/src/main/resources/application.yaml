@@ -114,14 +114,19 @@ management:
       enabled: true
 
 
-resilience4j.circuitbreaker:
-  instances:
-    ordering-route-cb:
-      slidingWindowSize: 8
-      failureRateThreshold: 50
-      minimumNumberOfCalls: 5
-      permittedNumberOfCallsInHalfOpenState: 5
-      slidingWindowType: COUNT_BASED
-      waitDurationInOpenState: 10s
-      maxWaitDurationInHalfOpenState: 30s
-      registerHealthIndicator: true
+resilience4j:
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 60s
+  circuitbreaker:
+    instances:
+      ordering-route-cb:
+        slidingWindowSize: 8
+        failureRateThreshold: 50
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 5
+        slidingWindowType: COUNT_BASED
+        waitDurationInOpenState: 10s
+        maxWaitDurationInHalfOpenState: 30s
+        registerHealthIndicator: true
