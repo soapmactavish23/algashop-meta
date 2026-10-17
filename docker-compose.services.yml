@@ -109,7 +109,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 256M
+          memory: 512M
   algashop-ecommerce-app:
     image: algashop/algashop-ecommerce:dev
     restart: no
