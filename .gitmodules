@@ -39,3 +39,7 @@
 [submodule "apps/admin"]
 	path = apps/admin
 	url = https://github.com/soapmactavish23/ems-algashop-admin.git
+[submodule "microservices/notifications"]
+	path = microservices/notifications
+	url = https://github.com/soapmactavish23/ems-algashop-notifications
+	branch = main
