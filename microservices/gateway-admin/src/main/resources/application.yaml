@@ -66,6 +66,11 @@ spring:
                       - 502
                       - 504
                       - 500
+            - id: orders-metrics-route
+              uri: lb://ordering
+              predicates:
+                - Path=/api/v1/metrics/sales-overview
+                - Method=GET,OPTIONS
             - id: customers-route
               uri: lb://ordering
               predicates:
@@ -95,6 +100,16 @@ spring:
               uri: lb://authorization-server
               predicates:
                 - Path=/api/v1/users/**
+                - Method=GET,POST,PUT,DELETE,OPTIONS
+            - id: emails-route
+              uri: lb://notifications
+              predicates:
+                - Path=/api/v1/emails
+                - Method=POST,OPTIONS
+            - id: email-templates-route
+              uri: lb://notifications
+              predicates:
+                - Path=/api/v1/email-templates,/api/v1/email-templates/**
                 - Method=GET,POST,PUT,DELETE,OPTIONS
   data:
     redis:
