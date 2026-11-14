@@ -1,0 +1,7 @@
+# Scripts Linux sempre com LF
+*.sh text eol=lf
+
+# Arquivos Docker
+Dockerfile text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
