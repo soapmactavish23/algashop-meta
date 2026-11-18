@@ -43,3 +43,7 @@
 	path = microservices/notifications
 	url = https://github.com/soapmactavish23/ems-algashop-notifications
 	branch = main
+[submodule "microservices/insights"]
+	path = microservices/insights
+	url = https://github.com/soapmactavish23/ems-algashop-insights
+	branch = main
